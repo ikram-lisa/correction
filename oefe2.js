@@ -5,11 +5,11 @@ function Text(string) {
 Text.prototype.charCount = function () {
   return this.str.length;
 };
-Text.prototype.left = function (x) {
-  return this.str.substr(0, x);
+Text.prototype.left = function (links) {
+  return this.str.substr(0, links);
 };
-Text.prototype.right = function (x) {
-  return this.str.substr(Text.length - (x + 1));
+Text.prototype.right = function (richt) {
+  return this.str.substr(Text.length - (richt + 1));
 };
 
 Text.prototype.wordCount = function () {
@@ -18,7 +18,7 @@ Text.prototype.wordCount = function () {
     " "
   );
 };
-Text.prototype.vowelCount = function (string) {
+Text.prototype.vowelCount = function () {
   let vowelsCount = 0;
 
   let str = this.str.toString();
