@@ -54,4 +54,4 @@ console.log(zin.charCount());
 console.log(zin.wordCount());
 console.log(zin.vowelCount());
 console.log(zin.append(" en ik zal deze keer goede punten hebben"));
-console.log(zin.prepend("ik heb niet geslagd"));
+console.log(zin.prepend("Ik heb niet geslagd"));
