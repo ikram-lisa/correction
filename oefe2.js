@@ -41,10 +41,18 @@ Text.prototype.capitalCount = function () {
 };
 
 Text.prototype.append = function (str) {
-  return (this.str = this.str + str);
+  return (this.str += str);
+  // let strAppend = " en ik zal deze keer goede punten hebben";
+  // let result = strAppend.concat(" ", this.str);
+
+  // return result;
 };
 Text.prototype.prepend = function (str) {
-  return (this.str = str + this.str);
+  // return (this.str = str + this.str);
+  let strPreppend = "Ik heb niet geslagd,";
+  let result = strPreppend.concat(" ", this.str);
+
+  return result;
 };
 const zin = new Text("Dit Is Een Nieuw Kans!");
 
@@ -53,5 +61,7 @@ console.log(zin.right(2));
 console.log(zin.charCount());
 console.log(zin.wordCount());
 console.log(zin.vowelCount());
+// console.log(zin.append());
+console.log(zin.prepend());
 console.log(zin.append(" en ik zal deze keer goede punten hebben"));
-console.log(zin.prepend("Ik heb niet geslagd"));
+// console.log(zin.prepend("Ik heb niet geslagd"));
